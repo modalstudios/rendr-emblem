@@ -1,0 +1,45 @@
+{
+  "name": "rendr-handlebars",
+  "version": "0.1.0",
+  "description": "Glue handlebars templates into a Rendr app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.test.js test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/airbnb/rendr-handlebars.git"
+  },
+  "dependencies": {
+    "underscore": "~1.4.4",
+    "emblem": "~0.3.4",
+    "handlebars":"~1.0.12"
+  },
+  "peerDependencies": {
+    "rendr": ">=0.5.0-alpha09"
+  },
+  "keywords": [
+    "rendr",
+    "handlebars",
+    "templates"
+  ],
+  "author": {
+    "name": "Spike Brehm",
+    "email": "spike@airbnb.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "npm": ">=1.2.10"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  },
+  "readme": "rendr-handlebars\n================\n\n[Handlebars](http://handlebarsjs.com/) template adapter for [Rendr](https://github.com/airbnb/rendr) apps.",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/airbnb/rendr-handlebars/issues"
+  },
+  "homepage": "https://github.com/airbnb/rendr-handlebars",
+  "_id": "rendr-handlebars@0.1.0",
+  "_from": "rendr-handlebars@0.1.0"
+}
