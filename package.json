@@ -1,23 +1,22 @@
 {
-  "name": "rendr-handlebars",
-  "version": "0.1.0",
-  "description": "Glue handlebars templates into a Rendr app.",
+  "name": "rendr-emblem",
+  "version": "0.1.1",
+  "description": "Glue emblem/handlebars templates into a Rendr app.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*.test.js test/**/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/airbnb/rendr-handlebars.git"
+    "url": "http://github.com/modalstudios/rendr-emblem.git"
   },
   "dependencies": {
-    "underscore": "~1.4.4",
-    "emblem": "~0.3.4",
-    "handlebars":"~1.0.12"
+    "lodash": "~2.4",
+    "emblem": "*",
+    "handlebars": "1.0.12"
   },
-  "peerDependencies": {
-    "rendr": ">=0.5.0-alpha09"
-  },
+  "bundledDependencies": [
+  ],
   "keywords": [
     "rendr",
     "handlebars",

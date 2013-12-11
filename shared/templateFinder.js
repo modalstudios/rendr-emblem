@@ -23,7 +23,13 @@ module.exports = function(Handlebars) {
      * Allow compiledTemplates to be created asynchronously.
      */
     cachedTemplates[src] = cachedTemplates[src] || require(src)(Handlebars);
-    return cachedTemplates[src][templateName];
+
+    var cachedTemplate = cachedTemplates[src][templateName]
+    if (!cachedTemplate) {
+      throw new Error("Could not find template with name [" + templateName + "]");
+    }
+
+    return cachedTemplate;
   }
 
   /**

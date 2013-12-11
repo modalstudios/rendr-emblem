@@ -2,13 +2,8 @@ var Handlebars = require('handlebars');
 
 // require('ember/handlebars');
 module.exports = function(options){
-
-  // Adapter config
-  this.options = options || {
-    compiledTemplatesFile: ''
-  };
-
   var localExports, templateFinder;
+  this.options = options
 
   localExports = {};
   templateFinder = require('./shared/templateFinder')(Handlebars);
@@ -32,7 +27,7 @@ module.exports = function(options){
    * The default pattern `/.+/` is very greedy; it matches anything, including nested paths.
    * Expose `templatePatterns` for manipulating how `getTemplate` finds templates.
    */
-  localExports.templatePatterns.push({pattern: /.+/, src: this.options.compiledTemplatesFile})
+  localExports.templatePatterns.push({pattern: /.+/, src: options.entryPath + 'app/templates/compiledTemplates'})
 
   /**
    * `getLayout` should only be used on the server.

@@ -1,4 +1,13 @@
-var _ = require('underscore');
+var _ = null;
+
+// a bit of a hack because rendr relies on underscore and we want to migrate to lodash's drop in replacement
+// in order to make the name's compatible, we need to use 'underscore' when included in the client
+// 
+if (typeof window !== "undefined" && window !== null) {
+  _ = require('underscore');
+} else {
+  _ = require('lodash/dist/lodash.underscore')
+}
 
 // Lazy-required.
 var BaseView = null;
