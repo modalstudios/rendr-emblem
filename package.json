@@ -36,9 +36,6 @@
   "readme": "rendr-handlebars\n================\n\n[Handlebars](http://handlebarsjs.com/) template adapter for [Rendr](https://github.com/airbnb/rendr) apps.",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/airbnb/rendr-handlebars/issues"
-  },
-  "homepage": "https://github.com/airbnb/rendr-handlebars",
-  "_id": "rendr-handlebars@0.1.0",
-  "_from": "rendr-handlebars@0.1.0"
+    "url": "http://github.com/modalstudios/rendr-emblem.git/issues"
+  }
 }
