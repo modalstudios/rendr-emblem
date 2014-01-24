@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "lodash": "~2.4",
-    "emblem": "*"
+    "emblem": "*",
+    "handlebars": "*"
   },
   "bundledDependencies": [
   ],
