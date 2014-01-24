@@ -17,8 +17,9 @@ module.exports = function(Handlebars) {
       var layoutFile = getLayoutFile('emblem');
       if (!fs.existsSync(layoutFile)) {
 
-        layoutFile = getLayoutFile('hbs');
-        if (!fs.existsSync(layoutFile('hbs'))) {
+        layoutExt = 'hbs';
+        layoutFile = getLayoutFile(layoutExt);
+        if (!fs.existsSync(layoutFile)) {
           throw new Error("rendr-emblem - Couldn't find template: [" + layoutFile + " or .emblem]");
         }
       }
